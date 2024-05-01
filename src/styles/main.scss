@@ -1,0 +1,7 @@
+@import "./colors.module.scss";
+@import './colors.module';
+
+body {
+    font-family: $font-family;
+    background-color: $background-color;
+}

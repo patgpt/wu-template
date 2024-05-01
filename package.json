@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "gen-css-types": "tcm src -p '**/*.module.scss'",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -25,13 +26,15 @@
     "@storybook/nextjs": "^8.0.9",
     "@storybook/react": "^8.0.9",
     "@storybook/test": "^8.0.9",
-    "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/node": "^20.12.8",
+    "@types/react": "^18.3.1",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "eslint-plugin-storybook": "^0.8.0",
+    "sass": "^1.76.0",
     "storybook": "^8.0.9",
-    "typescript": "^5"
+    "typed-css-modules": "^0.9.1",
+    "typescript": "^5.4.5"
   }
 }

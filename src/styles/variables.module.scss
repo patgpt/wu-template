@@ -1,0 +1,305 @@
+/*
+Import color definitions from colors.module.scss
+*/
+@import './colors.module.scss';
+
+/*
+Retrieve colors from a predefined palette in colors.module.scss
+*/
+$primary-color: map-get($palette, 'primary');
+$secondary-color: map-get($palette, 'secondary');
+$error-color: map-get($palette, 'error');
+$background-color: map-get($palette, 'background');
+$surface-color: map-get($palette, 'surface');
+$on-primary-color: map-get($palette, 'on-primary');
+$on-secondary-color: map-get($palette, 'on-secondary');
+$on-error-color: map-get($palette, 'on-error');
+$on-background-color: map-get($palette, 'on-background');
+$on-surface-color: map-get($palette, 'on-surface');
+
+/*
+Typography settings for consistency and scalability across the project
+*/
+$font-family: 'Roboto', sans-serif;
+$font-size-root: 16px; /* Base font size, influences rem calculations */
+$font-size-h1: 2.125rem; /* Heading 1 size */
+$font-size-h2: 1.5rem; /* Heading 2 size */
+$font-size-h3: 1.25rem; /* Heading 3 size */
+$font-size-body1: 1rem; /* Main body text size */
+$font-size-body2: 0.875rem; /* Secondary body text size */
+$font-size-caption: 0.75rem; /* Caption text size */
+$font-size-button: 0.875rem; /* Button text size */
+
+/*
+Font weights for design flexibility and emphasis
+*/
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$letter-spacing: 0.05em; /* Default letter spacing */
+
+/*
+Button states for interactive feedback
+*/
+$button-hover-bg-color: rgba(0, 0, 0, 0.08);
+$button-active-bg-color: rgba(0, 0, 0, 0.12);
+$button-disabled-bg-color: rgba(0, 0, 0, 0.26);
+
+/*
+Input field styles for focus, hover, and default states
+*/
+$input-border-color: rgba(0, 0, 0, 0.42);
+$input-hover-border-color: rgba(0, 0, 0, 0.87);
+$input-focus-border-color: $primary-color;
+
+/*
+Slider customization for consistency with design language
+*/
+$slider-thumb-color: $primary-color;
+$slider-track-color: rgba(0, 0, 0, 0.26);
+$slider-disabled-color: rgba(0, 0, 0, 0.26);
+
+/*
+Tooltip visual settings for readability and accessibility
+*/
+$tooltip-background-color: rgba(97, 97, 97, 0.9);
+$tooltip-text-color: $on-primary-color;
+
+/*
+Elevation shadows for UI depth and focus on elements
+*/
+$elevation-z0: none;
+$elevation-z1: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.06);
+$elevation-z2: 0 2px 4px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06);
+$elevation-z3: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.06);
+/* Additional elevations can be defined up to z24 as needed */
+
+/*
+Spacing variables for layout and design consistency
+*/
+$spacing-1: 4px;
+$spacing-2: 8px;
+$spacing-3: 12px;
+$spacing-4: 16px;
+$spacing-5: 24px;
+$spacing-6: 32px;
+$spacing-7: 48px;
+$spacing-8: 64px;
+$spacing-9: 96px;
+$spacing-10: 128px;
+
+/*
+Grid system configurations for responsive layouts
+*/
+$grid-gutter-width: 16px; /* Spacing between grid cells */
+$grid-columns: 12; /* Number of columns in the grid system */
+
+/*
+Responsive breakpoints for media queries
+*/
+$breakpoint-xs: 0;
+$breakpoint-sm: 600px;
+$breakpoint-md: 960px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1920px;
+
+/*
+Typographic scaling factors for responsive text sizing
+*/
+$font-scale-mobile: 1.2; /* Scaling factor for mobile devices */
+$font-scale-desktop: 1.3; /* Scaling factor for desktop devices */
+
+/*
+Duration variables for consistent animation timing
+*/
+$duration-level-1: 75ms; /* Fast animations, subtle effects */
+$duration-level-2: 150ms; /* Medium animations, noticeable transitions */
+$duration-level-3: 200ms; /* Slower animations, significant movements */
+
+/*
+Border-radius for UI components to control corner rounding
+*/
+$border-radius-small: 2px;
+$border-radius-medium: 4px;
+$border-radius-large: 8px;
+
+/*
+Shadows for depth effects on UI components
+*/
+$shadow-level-1: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+$shadow-level-2: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+/*
+Accessibility outlines for focusable elements
+*/
+$focus-outline: 2px solid rgba(0, 0, 0, 0.87);
+$focus-outline-offset: 2px;
+
+/*
+Icon sizing for consistent visual elements
+*/
+$icon-size-small: 18px;
+$icon-size-medium: 24px;
+$icon-size-large: 36px;
+
+/*
+Opacity settings for interactive state visibility
+*/
+$disabled-opacity: 0.38;
+$hover-opacity: 0.04;
+$selected-opacity: 0.08;
+$activated-opacity: 0.12;
+
+/*
+Visual styles for dividers to separate content areas
+*/
+$divider-thickness: 1px;
+$divider-color: rgba(0, 0, 0, 0.12);
+
+/*
+Interactive states for dynamic feedback on user actions
+*/
+$state-hover: rgba(0, 0, 0, 0.04);
+$state-focused: rgba(0, 0, 0, 0.12);
+$state-pressed: rgba(0, 0, 0, 0.16);
+
+/*
+Animation curves for smooth transitions
+*/
+$transition-standard-curve: cubic-bezier(0.4, 0.0, 0.2, 1);
+$transition-duration-enter: 225ms; /* Entering animations */
+$transition-duration-exit: 195ms; /* Exiting animations */
+
+/*
+Theming extensions for light and dark modes
+*/
+$dark-primary-text-color: rgba(255, 255, 255, 0.87);
+$dark-secondary-text-color: rgba(255, 255, 255, 0.54);
+$light-primary-text-color: rgba(0, 0, 0, 0.87);
+$light-secondary-text-color: rgba(0, 0, 0, 0.54);
+
+/*
+Specific component theming for chips
+*/
+$chip-height: 32px;
+$chip-padding: 0 12px;
+$chip-border-radius: $border-radius-medium;
+$chip-background-color: $surface-color;
+$chip-text-color: $on-surface-color;
+
+/*
+Define colors for dark theme
+*/
+$dark-background-color: #121212;
+$dark-surface-color: #333;
+
+/*
+Responsive margin and padding mixins for adaptive spacing
+*/
+@mixin responsive-margin {
+  margin: $margin-mobile;
+  @media(min-width: $breakpoint-md) {
+    margin: $margin-desktop;
+  }
+}
+
+@mixin responsive-padding {
+  padding: $margin-mobile;
+  @media(min-width: $breakpoint-md) {
+    padding: $margin-desktop;
+  }
+}
+
+/*
+Exporting variables for use in JavaScript
+*/
+:export {
+  primaryColor: $primary-color;
+  secondaryColor: $secondary-color;
+  successColor: $success-color;
+  errorColor: $error-color;
+  infoColor: $info-color;
+  warningColor: $warning-color;
+  fontFamily: $font-family;
+  fontSizeRoot: $font-size-root;
+  fontSizeH1: $font-size-h1;
+  fontSizeH2: $font-size-h2;
+  fontSizeH3: $font-size-h3;
+  fontSizeBody1: $font-size-body1;
+  fontSizeBody2: $font-size-body2;
+  fontSizeCaption: $font-size-caption;
+  fontSizeButton: $font-size-button;
+  fontWeightLight: $font-weight-light;
+  fontWeightRegular: $font-weight-regular;
+  fontWeightMedium: $font-weight-medium;
+  fontWeightBold: $font-weight-bold;
+  letterSpacing: $letter-spacing;
+  elevationZ0: $elevation-z0;
+  elevationZ1: $elevation-z1;
+  spacing1: $spacing-1;
+  spacing2: $spacing-2;
+  spacing3: $spacing-3;
+  spacing4: $spacing-4;
+  spacing5: $spacing-5;
+  spacing6: $spacing-6;
+  spacing7: $spacing-7;
+  spacing8: $spacing-8;
+  spacing9: $spacing-9;
+  gridGutterWidth: $grid-gutter-width;
+  gridColumns: $grid-columns;
+  breakpointXs: $breakpoint-xs;
+  breakpointSm: $breakpoint-sm;
+  breakpointMd: $breakpoint-md;
+  breakpointLg: $breakpoint-lg;
+  breakpointXl: $breakpoint-xl;
+  fontScaleMobile: $font-scale-mobile;
+  fontScaleDesktop: $font-scale-desktop;
+  durationLevel1: $duration-level-1;
+  durationLevel2: $duration-level-2;
+  durationLevel3: $duration-level-3;
+  borderRadiusSmall: $border-radius-small;
+  borderRadiusMedium: $border-radius-medium;
+  borderRadiusLarge: $border-radius-large;
+  shadowLevel1: $shadow-level-1;
+  shadowLevel2: $shadow-level-2;
+  focusOutline: $focus-outline;
+  focusOutlineOffset: $focus-outline-offset;
+  iconSizeSmall: $icon-size-small;
+  iconSizeMedium: $icon-size-medium;
+  iconSizeLarge: $icon-size-large;
+  disabledOpacity: $disabled-opacity;
+  hoverOpacity: $hover-opacity;
+  selectedOpacity: $selected-opacity;
+  activatedOpacity: $activated-opacity;
+  dividerThickness: $divider-thickness;
+  dividerColor: $divider-color;
+  stateHover: $state-hover;
+  stateFocused: $state-focused;
+  statePressed: $state-pressed;
+  transitionStandardCurve: $transition-standard-curve;
+  transitionDurationEnter: $transition-duration-enter;
+  transitionDurationExit: $transition-duration-exit;
+  darkPrimaryTextColor: $dark-primary-text-color;
+  darkSecondaryTextColor: $dark-secondary-text-color;
+  lightPrimaryTextColor: $light-primary-text-color;
+  lightSecondaryTextColor: $light-secondary-text-color;
+  chipHeight: $chip-height;
+  chipPadding: $chip-padding;
+  chipBorderRadius: $chip-border-radius;
+  chipBackgroundColor: $chip-background-color;
+  chipTextColor: $chip-text-color;
+  buttonHoverBgColor: $button-hover-bg-color;
+  buttonActiveBgColor: $button-active-bg-color;
+  buttonDisabledBgColor: $button-disabled-bg-color;
+  inputBorderColor: $input-border-color;
+  inputHoverBorderColor: $input-hover-border-color;
+  inputFocusBorderColor: $input-focus-border-color;
+  sliderThumbColor: $slider-thumb-color;
+  sliderTrackColor: $slider-track-color;
+  sliderDisabledColor: $slider-disabled-color;
+  tooltipBackgroundColor: $tooltip-background-color;
+  tooltipTextColor: $tooltip-text-color;
+  darkBackgroundColor: $dark-background-color;
+  darkSurfaceColor: $dark-surface-color
+}

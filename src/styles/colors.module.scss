@@ -1,0 +1,44 @@
+/*
+This file defines the color palettes for both light and dark themes using SASS maps. These maps provide a centralized reference for all color values, facilitating easy theming and consistency across your application.  Define a color palette using SASS maps for the light theme. Each color is associated with a specific purpose within the UI, improving maintainability and scalability of styles.
+*/
+$palette: (
+        primary: #6200ea,
+        primary-variant: #3700b3,
+        secondary: #03dac6,
+        secondary-variant: #018786,
+        background: #ffffff,
+        surface: #ffffff,
+        error: #b00020,
+        on-primary: #ffffff,
+        on-secondary: #000000,
+        on-error: #ffffff,
+        on-background: #000000,
+        on-surface: #000000
+);
+
+/*
+ Define a color palette for the dark theme.
+ This palette uses lighter text colors and darker background colors to suit dark mode aesthetics and usability.
+*/
+$dark-palette: (
+        primary: #bb86fc,
+        primary-variant: #3700b3,
+        secondary: #03dac6,
+        secondary-variant: #03dac6,
+        background: #121212,
+        surface: #333333,
+        error: #cf6679,
+        on-primary: #000000,
+        on-secondary: #000000,
+        on-error: #000000,
+        on-background: #ffffff,
+        on-surface: #ffffff
+);
+
+/* Export the palettes using :export, making them available for import in JavaScript or other CSS files within your project.
+  This is particularly useful when you want to dynamically apply these colors through JavaScript, for example, in a theming or styling context.
+*/
+:export {
+  palette: $palette;
+  darkPalette: $dark-palette;
+}
