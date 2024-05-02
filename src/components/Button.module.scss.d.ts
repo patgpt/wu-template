@@ -37,6 +37,7 @@ declare const styles: {
   readonly "darkSurface": string;
   readonly "darkSurfaceColor": string;
   readonly "darkWarning": string;
+  readonly "disabled": string;
   readonly "disabledOpacity": string;
   readonly "dividerColor": string;
   readonly "dividerThickness": string;
@@ -75,9 +76,11 @@ declare const styles: {
   readonly "inputBorderColor": string;
   readonly "inputFocusBorderColor": string;
   readonly "inputHoverBorderColor": string;
+  readonly "large": string;
   readonly "letterSpacing": string;
   readonly "lightPrimaryTextColor": string;
   readonly "lightSecondaryTextColor": string;
+  readonly "medium": string;
   readonly "onBackground": string;
   readonly "onError": string;
   readonly "onPrimary": string;
@@ -95,6 +98,7 @@ declare const styles: {
   readonly "sliderDisabledColor": string;
   readonly "sliderThumbColor": string;
   readonly "sliderTrackColor": string;
+  readonly "small": string;
   readonly "spacing1": string;
   readonly "spacing2": string;
   readonly "spacing3": string;

@@ -1,0 +1,370 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "id": "socialLinks",
+        "type": "ContentType"
+      },
+      "name": "Social Links",
+      "description": "Contains links to social media platforms and corresponding icons.",
+      "fields": [
+        {
+          "id": "facebook",
+          "name": "Facebook",
+          "type": "Link",
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": ["socialMediaLink"]
+            }
+          ]
+        },
+        {
+          "id": "tiktok",
+          "name": "TikTok",
+          "type": "Link",
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": ["socialMediaLink"]
+            }
+          ]
+        },
+        {
+          "id": "instagram",
+          "name": "Instagram",
+          "type": "Link",
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": ["socialMediaLink"]
+            }
+          ]
+        },
+        {
+          "id": "twitter",
+          "name": "Twitter",
+          "type": "Link",
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": ["socialMediaLink"]
+            }
+          ]
+        },
+        {
+          "id": "linkedin",
+          "name": "LinkedIn",
+          "type": "Link",
+          "linkType": "Entry",
+          "validations": [
+            {
+              "linkContentType": ["socialMediaLink"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "socialMediaLink",
+        "type": "ContentType"
+      },
+      "name": "Social Media Link",
+      "fields": [
+        {
+          "id": "url",
+          "name": "URL",
+          "type": "Symbol",
+          "required": true
+        },
+        {
+          "id": "icon",
+          "name": "Icon",
+          "type": "Link",
+          "linkType": "Asset",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "sys": {
+        "id": "socialLinks",
+        "contentType": {
+          "sys": {
+            "id": "socialLinks",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "fields": {
+        "facebook": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "facebookLink"
+            }
+          }
+        },
+        "tiktok": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "tiktokLink"
+            }
+          }
+        },
+        "instagram": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "instagramLink"
+            }
+          }
+        },
+        "twitter": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "twitterLink"
+            }
+          }
+        },
+        "linkedin": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "linkedinLink"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "facebookLink",
+        "contentType": {
+          "sys": {
+            "id": "socialMediaLink",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "fields": {
+        "url": {
+          "en-US": "https://www.facebook.com/withutraining"
+        },
+        "icon": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "facebookIcon"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "tiktokLink",
+        "contentType": {
+          "sys": {
+            "id": "socialMediaLink",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "fields": {
+        "url": {
+          "en-US": "https://www.tiktok.com/withutraining"
+        },
+        "icon": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "tiktokIcon"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "instagramLink",
+        "contentType": {
+          "sys": {
+            "id": "socialMediaLink",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "fields": {
+        "url": {
+          "en-US": "https://www.instagram.com/withutraining"
+        },
+        "icon": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "instagramIcon"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "twitterLink",
+        "contentType": {
+          "sys": {
+            "id": "socialMediaLink",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "fields": {
+        "url": {
+          "en-US": "https://www.twitter.com/withutraining"
+        },
+        "icon": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "twitterIcon"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "linkedinLink",
+        "contentType": {
+          "sys": {
+            "id": "socialMediaLink",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "fields": {
+        "url": {
+          "en-US": "https://www.linkedin.com/withutraining"
+        },
+        "icon": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "linkedinIcon"
+            }
+          }
+        }
+      }
+    }
+  ],
+
+  "assets": [
+    {
+      "sys": {
+        "id": "facebookIcon"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Facebook Icon"
+        },
+        "file": {
+          "en-US": {
+            "contentType": "image/svg+xml",
+            "fileName": "facebook.svg",
+            "upload": "./assets/facebook.svg"
+          }
+        }
+      }
+    } ,
+    {
+      "sys": {
+        "id": "tiktokIcon"
+      },
+      "fields": {
+        "title": {
+          "en-US": "TikTok Icon"
+        },
+        "file": {
+          "en-US": {
+            "contentType": "image/svg+xml",
+            "fileName": "tiktok.svg",
+            "upload": "./assets/tiktok.svg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "instagramIcon"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Instagram Icon"
+        },
+        "file": {
+          "en-US": {
+            "contentType": "image/svg+xml",
+            "fileName": "instagram.svg",
+            "upload": "./assets/instagram.svg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "twitterIcon"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Twitter Icon"
+        },
+        "file": {
+          "en-US": {
+            "contentType": "image/svg+xml",
+            "fileName": "twitter.svg",
+            "upload": "./assets/twitter.svg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "linkedinIcon"
+      },
+      "fields": {
+        "title": {
+          "en-US": "LinkedIn Icon"
+        },
+        "file": {
+          "en-US": {
+            "contentType": "image/svg+xml",
+            "fileName": "linkedin.svg",
+            "upload": "./assets/linkedin.svg"
+          }
+        }
+      }
+    }
+  ]
+}

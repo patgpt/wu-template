@@ -15,6 +15,7 @@ declare const styles: {
   readonly "darkSuccess": string;
   readonly "darkSurface": string;
   readonly "darkWarning": string;
+  readonly "disabled": string;
   readonly "error": string;
   readonly "info": string;
   readonly "onBackground": string;

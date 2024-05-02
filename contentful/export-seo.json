@@ -1,0 +1,264 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "id": "seoMetadata",
+        "type": "ContentType"
+      },
+      "name": "SEO Metadata",
+      "description": "Contains SEO metadata like title, description, and keywords.",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Symbol",
+          "localized": true
+        },
+        {
+          "id": "keywords",
+          "name": "Keywords",
+          "type": "Array",
+          "items": {
+            "type": "Symbol"
+          },
+          "localized": true
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "openGraphMetadata",
+        "type": "ContentType"
+      },
+      "name": "Open Graph Metadata",
+      "description": "Manages Open Graph data for social media sharing.",
+      "fields": [
+        {
+          "id": "ogTitle",
+          "name": "OG Title",
+          "type": "Symbol",
+          "localized": true
+        },
+        {
+          "id": "ogDescription",
+          "name": "OG Description",
+          "type": "Symbol",
+          "localized": true
+        },
+        {
+          "id": "ogImage",
+          "name": "OG Image",
+          "type": "Link",
+          "linkType": "Asset"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "twitterCardMetadata",
+        "type": "ContentType"
+      },
+      "name": "Twitter Card Metadata",
+      "description": "Contains Twitter card information for social sharing.",
+      "fields": [
+        {
+          "id": "twitterTitle",
+          "name": "Twitter Title",
+          "type": "Symbol",
+          "localized": true
+        },
+        {
+          "id": "twitterDescription",
+          "name": "Twitter Description",
+          "type": "Symbol",
+          "localized": true
+        },
+        {
+          "id": "twitterImage",
+          "name": "Twitter Image",
+          "type": "Link",
+          "linkType": "Asset"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "seoLinks",
+        "type": "ContentType"
+      },
+      "name": "SEO Links",
+      "description": "Manages SEO-related links such as canonical URLs.",
+      "fields": [
+        {
+          "id": "canonicalUrl",
+          "name": "Canonical URL",
+          "type": "Symbol",
+          "validations": [
+            {
+              "regexp": {
+                "pattern": "^(https?):\\/\\/",
+                "flags": "i"
+              },
+              "message": "Enter a valid URL starting with http:// or https://"
+            }
+          ]
+        },
+        {
+          "id": "robots",
+          "name": "Robots",
+          "type": "Symbol",
+          "validations": [
+            {
+              "in": ["index, follow", "noindex, follow", "index, nofollow", "noindex, nofollow"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "sys": {
+        "id": "defaultSeoMetadata",
+        "contentType": {
+          "sys": {
+            "id": "seoMetadata",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Default Page Title"
+        },
+        "description": {
+          "en-US": "Default description for the page, optimized for SEO with relevant keywords."
+        },
+        "keywords": {
+          "en-US": ["default", "keywords", "seo", "contentful"]
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "defaultOpenGraphMetadata",
+        "contentType": {
+          "sys": {
+            "id": "openGraphMetadata",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "fields": {
+        "ogTitle": {
+          "en-US": "Default Open Graph Title"
+        },
+        "ogDescription": {
+          "en-US": "Default Open Graph description that appears in social shares."
+        },
+        "ogImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "defaultOgImage"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "defaultTwitterCardMetadata",
+        "contentType": {
+          "sys": {
+            "id": "twitterCardMetadata",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "fields": {
+        "twitterTitle": {
+          "en-US": "Default Twitter Title"
+        },
+        "twitterDescription": {
+          "en-US": "Default Twitter description that appears in Tweets."
+        },
+        "twitterImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "defaultTwitterImage"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "defaultSeoLinks",
+        "contentType": {
+          "sys": {
+            "id": "seoLinks",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        }
+      },
+      "fields": {
+        "canonicalUrl": {
+          "en-US": "https://www.example.com"
+        },
+        "robots": {
+          "en-US": "index, follow"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "sys": {
+        "id": "defaultOgImage"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Default Open Graph Image"
+        },
+        "file": {
+          "en-US": {
+            "contentType": "image/jpeg",
+            "fileName": "default-og.jpg",
+            "upload": "https://example.com/path/to/default-og.jpg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "defaultTwitterImage"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Default Twitter Image"
+        },
+        "file": {
+          "en-US": {
+            "contentType": "image/jpeg",
+            "fileName": "default-twitter.jpg",
+            "upload": "https://example.com/path/to/default-twitter.jpg"
+          }
+        }
+      }
+    }
+  ]
+}

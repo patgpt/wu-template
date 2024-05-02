@@ -1,0 +1,94 @@
+{
+  "entries": [
+    {
+      "sys": {
+        "id": "exampleSeoEntry1",
+        "contentType": {
+          "sys": {
+            "id": "seoMetadata"
+          }
+        }
+      },
+      "fields": {
+        "seoTitle": {
+          "en-US": "Home - WithU Training"
+        },
+        "seoDescription": {
+          "en-US": "Explore WithU Training programs to elevate your fitness journey. Start training today and achieve your fitness goals!"
+        },
+        "seoKeywords": {
+          "en-US": "fitness, training, health, workout"
+        },
+        "seoPageUrl": {
+          "en-US": "/home"
+        },
+        "seoImageAltText": {
+          "en-US": "Trainers at WithU Training demonstrating workout"
+        },
+        "metaRobots": {
+          "en-US": "index, follow"
+        },
+        "openGraphTitle": {
+          "en-US": "Join WithU Training Today"
+        },
+        "openGraphDescription": {
+          "en-US": "Join thousands of members in the WithU Training community to transform your body and mind with expert-designed fitness programs."
+        },
+        "openGraphImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "ogImage1"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "id": "exampleSeoEntry2",
+        "contentType": {
+          "sys": {
+            "id": "seoMetadata"
+          }
+        }
+      },
+      "fields": {
+        "seoTitle": {
+          "en-US": "About Us - WithU Training"
+        },
+        "seoDescription": {
+          "en-US": "Learn more about WithU Training's mission to make fitness accessible for everyone. Discover our story and values."
+        },
+        "seoKeywords": {
+          "en-US": "about WithU, fitness mission, training values"
+        },
+        "seoPageUrl": {
+          "en-US": "/about-us"
+        },
+        "seoImageAltText": {
+          "en-US": "Team WithU Training at the community fitness event"
+        },
+        "metaRobots": {
+          "en-US": "index, follow"
+        },
+        "openGraphTitle": {
+          "en-US": "About WithU Training"
+        },
+        "openGraphDescription": {
+          "en-US": "WithU Training is dedicated to bringing high-quality fitness solutions to everyone. Get to know us better!"
+        },
+        "openGraphImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "ogImage2"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

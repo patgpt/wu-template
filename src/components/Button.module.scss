@@ -1,8 +1,12 @@
 @import './../styles/variables.module.scss';
 
+
+
+
+
 .button {
-  padding: $spacing-3 $spacing-5;
-  background-color: $primary-color;
+  padding: $spacing-3 $spacing-4;
+  background-color: $button-disabled-bg-color;
   border: none;
   border-radius: $border-radius-medium;
   color: $on-primary-color;
@@ -27,4 +31,32 @@
     cursor: not-allowed;
     opacity: $disabled-opacity;
   }
+  .primary {
+    background-color: $primary-color;
+  }
+
+    .secondary {
+        background-color: $secondary-color;
+    }
+
+  .disabled {
+    background-color: $disabled-color;
+    cursor: not-allowed;
+  }
+
+  .small {
+    font-size: $font-size-body1;
+    padding: $spacing-9;
+  }
+
+  .medium {
+    font-size: $font-size-body1;
+    padding: $spacing-2;
+  }
+
+  .large {
+    font-size: $font-size-body1 ;
+    padding: $spacing-2;
+  }
+
 }

@@ -1,0 +1,97 @@
+{
+  "contentTypeId": "seoMetadata",
+  "name": "SEO Metadata",
+  "description": "SEO settings for Pages or Articles including title, description, keywords, and more.",
+  "displayField": "seoTitle",
+  "fields": [
+    {
+      "id": "seoTitle",
+      "name": "SEO Title",
+      "type": "Symbol",
+      "localized": true,
+      "required": true
+    },
+    {
+      "id": "seoDescription",
+      "name": "SEO Description",
+      "type": "Symbol",
+      "localized": true,
+      "required": true,
+      "validations": [
+        {
+          "unique": true
+        },
+        {
+          "size": {
+            "min": 120,
+            "max": 160
+          }
+        }
+      ]
+    },
+    {
+      "id": "seoKeywords",
+      "name": "SEO Keywords",
+      "type": "Symbol",
+      "localized": true,
+      "required": true,
+      "validations": [
+        {
+          "size": {
+            "min": 0,
+            "max": 60
+          }
+        }
+      ],
+      "defaultValue": {
+        "en-US": "WithU Training"
+      }
+    },
+    {
+      "id": "seoPageUrl",
+      "name": "SEO Page URL",
+      "type": "Symbol",
+      "localized": true,
+      "required": false
+    },
+    {
+      "id": "seoImageAltText",
+      "name": "SEO Image Alt Text",
+      "type": "Symbol",
+      "localized": true,
+      "required": false
+    },
+    {
+      "id": "metaRobots",
+      "name": "Meta Robots",
+      "type": "Symbol",
+      "localized": true,
+      "required": false,
+      "defaultValue": {
+        "en-US": "index, follow"
+      }
+    },
+    {
+      "id": "openGraphTitle",
+      "name": "Open Graph Title",
+      "type": "Symbol",
+      "localized": true,
+      "required": false
+    },
+    {
+      "id": "openGraphDescription",
+      "name": "Open Graph Description",
+      "type": "Symbol",
+      "localized": true,
+      "required": false
+    },
+    {
+      "id": "openGraphImage",
+      "name": "Open Graph Image",
+      "type": "Link",
+      "linkType": "Asset",
+      "localized": true,
+      "required": false
+    }
+  ]
+}

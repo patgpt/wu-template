@@ -11,6 +11,7 @@ $secondary-color: map-get($palette, 'secondary');
 $success-color: map-get($palette, 'success');
 $info-color: map-get($palette, 'info');
 $warning-color: map-get($palette, 'warning');
+$disabled-color: map-get($palette, 'disabled');
 $error-color: map-get($palette, 'error');
 $background-color: map-get($palette, 'background');
 $surface-color: map-get($palette, 'surface');

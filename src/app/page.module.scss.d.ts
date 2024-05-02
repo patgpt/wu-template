@@ -36,6 +36,7 @@ declare const styles: {
   readonly "darkSurface": string;
   readonly "darkSurfaceColor": string;
   readonly "darkWarning": string;
+  readonly "disabled": string;
   readonly "disabledOpacity": string;
   readonly "dividerColor": string;
   readonly "dividerThickness": string;

@@ -11,6 +11,7 @@ $palette: (
         error: #b00020,
         success: #00c853,
         warning: #ffab00,
+        disabled: #9e9e9e,
         info: #2979ff,
         on-primary: #ffffff,
         on-secondary: #000000,
@@ -32,6 +33,7 @@ $dark-palette: (
         surface: #333333,
         success: #00c853,
         warning: #ffab00,
+        disabled: #9e9e9e,
         info: #2979ff,
         error: #cf6679,
         on-primary: #000000,
@@ -55,6 +57,7 @@ $dark-palette: (
   error: map-get($palette, 'error');
   success: map-get($palette, 'success');
   warning: map-get($palette, 'warning');
+    disabled: map-get($palette, 'disabled');
   info: map-get($palette, 'info');
   onPrimary: map-get($palette, 'on-primary');
   onSecondary: map-get($palette, 'on-secondary');
