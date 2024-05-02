@@ -9,6 +9,9 @@ $palette: (
         background: #ffffff,
         surface: #ffffff,
         error: #b00020,
+        success: #00c853,
+        warning: #ffab00,
+        info: #2979ff,
         on-primary: #ffffff,
         on-secondary: #000000,
         on-error: #ffffff,
@@ -27,6 +30,9 @@ $dark-palette: (
         secondary-variant: #03dac6,
         background: #121212,
         surface: #333333,
+        success: #00c853,
+        warning: #ffab00,
+        info: #2979ff,
         error: #cf6679,
         on-primary: #000000,
         on-secondary: #000000,
@@ -38,7 +44,36 @@ $dark-palette: (
 /* Export the palettes using :export, making them available for import in JavaScript or other CSS files within your project.
   This is particularly useful when you want to dynamically apply these colors through JavaScript, for example, in a theming or styling context.
 */
+
 :export {
-  palette: $palette;
-  darkPalette: $dark-palette;
+  primary: map-get($palette, 'primary');
+  primaryVariant: map-get($palette, 'primary-variant');
+  secondary: map-get($palette, 'secondary');
+  secondaryVariant: map-get($palette, 'secondary-variant');
+  background: map-get($palette, 'background');
+  surface: map-get($palette, 'surface');
+  error: map-get($palette, 'error');
+  success: map-get($palette, 'success');
+  warning: map-get($palette, 'warning');
+  info: map-get($palette, 'info');
+  onPrimary: map-get($palette, 'on-primary');
+  onSecondary: map-get($palette, 'on-secondary');
+  onError: map-get($palette, 'on-error');
+  onBackground: map-get($palette, 'on-background');
+  onSurface: map-get($palette, 'on-surface');
+  darkPrimary: map-get($dark-palette, 'primary');
+  darkPrimaryVariant: map-get($dark-palette, 'primary-variant');
+  darkSecondary: map-get($dark-palette, 'secondary');
+  darkSecondaryVariant: map-get($dark-palette, 'secondary-variant');
+  darkBackground: map-get($dark-palette, 'background');
+  darkSurface: map-get($dark-palette, 'surface');
+  darkError: map-get($dark-palette, 'error');
+  darkSuccess: map-get($dark-palette, 'success');
+  darkWarning: map-get($dark-palette, 'warning');
+  darkInfo: map-get($dark-palette, 'info');
+  darkOnPrimary: map-get($dark-palette, 'on-primary');
+  darkOnSecondary: map-get($dark-palette, 'on-secondary');
+  darkOnError: map-get($dark-palette, 'on-error');
+  darkOnBackground: map-get($dark-palette, 'on-background');
+  darkOnSurface: map-get($dark-palette, 'on-surface');
 }

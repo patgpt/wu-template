@@ -8,6 +8,9 @@ Retrieve colors from a predefined palette in colors.module.scss
 */
 $primary-color: map-get($palette, 'primary');
 $secondary-color: map-get($palette, 'secondary');
+$success-color: map-get($palette, 'success');
+$info-color: map-get($palette, 'info');
+$warning-color: map-get($palette, 'warning');
 $error-color: map-get($palette, 'error');
 $background-color: map-get($palette, 'background');
 $surface-color: map-get($palette, 'surface');
@@ -193,6 +196,13 @@ Define colors for dark theme
 */
 $dark-background-color: #121212;
 $dark-surface-color: #333;
+
+/*
+Margins and paddings for consistent spacing
+*/
+
+$margin-mobile: $spacing-3;
+$margin-desktop: $spacing-4;
 
 /*
 Responsive margin and padding mixins for adaptive spacing

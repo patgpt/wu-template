@@ -82,6 +82,7 @@ declare const styles: {
   readonly "onPrimary": string;
   readonly "onSecondary": string;
   readonly "onSurface": string;
+  readonly "page": string;
   readonly "primary": string;
   readonly "primaryColor": string;
   readonly "primaryVariant": string;

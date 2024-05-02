@@ -1,6 +1,34 @@
 declare const styles: {
-  readonly "darkPalette": string;
-  readonly "palette": string;
+  readonly "background": string;
+  readonly "darkBackground": string;
+  readonly "darkError": string;
+  readonly "darkInfo": string;
+  readonly "darkOnBackground": string;
+  readonly "darkOnError": string;
+  readonly "darkOnPrimary": string;
+  readonly "darkOnSecondary": string;
+  readonly "darkOnSurface": string;
+  readonly "darkPrimary": string;
+  readonly "darkPrimaryVariant": string;
+  readonly "darkSecondary": string;
+  readonly "darkSecondaryVariant": string;
+  readonly "darkSuccess": string;
+  readonly "darkSurface": string;
+  readonly "darkWarning": string;
+  readonly "error": string;
+  readonly "info": string;
+  readonly "onBackground": string;
+  readonly "onError": string;
+  readonly "onPrimary": string;
+  readonly "onSecondary": string;
+  readonly "onSurface": string;
+  readonly "primary": string;
+  readonly "primaryVariant": string;
+  readonly "secondary": string;
+  readonly "secondaryVariant": string;
+  readonly "success": string;
+  readonly "surface": string;
+  readonly "warning": string;
 };
 export = styles;
 

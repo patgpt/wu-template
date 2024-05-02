@@ -9,6 +9,7 @@ declare const styles: {
   readonly "breakpointSm": string;
   readonly "breakpointXl": string;
   readonly "breakpointXs": string;
+  readonly "button": string;
   readonly "buttonActiveBgColor": string;
   readonly "buttonDisabledBgColor": string;
   readonly "buttonHoverBgColor": string;
